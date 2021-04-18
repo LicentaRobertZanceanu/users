@@ -1,3 +1,5 @@
 export * from './get-users.js'
 export * from './create-user.js'
 export * from './get-user-by-email.js'
+export * from './get-user-details.js'
+export * from './update-user.js'
