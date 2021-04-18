@@ -21,7 +21,6 @@ export const getUserByEmail = async (req, res) => {
             })
         return
     }
-
     res.json(userFound)
     return
 }
