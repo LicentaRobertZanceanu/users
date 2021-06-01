@@ -3,7 +3,7 @@ import { checkAuthentication } from './utils/index.js'
 
 export const routes = (app) => {
     app.route('/users')
-        .get(getUsers)
+        .get(checkAuthentication, getUsers)
         .post(createUser)
         .put(checkAuthentication, updateUser)
     app.route('/users/logged-in')
